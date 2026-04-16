@@ -15,6 +15,10 @@ public class UseCase7TrainConsistMgmt {
         bogies.add(new Bogie("Sleeper", 72, "Passenger"));
         bogies.add(new Bogie("AC Chair", 60, "Passenger"));
         bogies.add(new Bogie("First Class", 40, "Luxury"));
+        bogies.add(new Bogie("Sleeper", 72));
+        bogies.add(new Bogie("AC Chair", 60));
+        bogies.add(new Bogie("First Class", 40));
+
         // Sort using Comparator (ascending order)
         bogies.sort(Comparator.comparingInt(Bogie::getCapacity));
 
