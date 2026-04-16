@@ -16,6 +16,16 @@ public class Bogie {
     // Overloaded constructor
     public Bogie(String name, int capacity, String type) {
         this(name, capacity, type, "General");
+
+    // Constructor
+    public Bogie(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
+    }
+
+    // Getters
+    public String getName() {
+        return name;
     }
 
     // Old constructor
@@ -31,5 +41,10 @@ public class Bogie {
     @Override
     public String toString() {
         return name + " (" + type + ", Cargo: " + cargo + ")";
+        return name + " (" + capacity + ")";
+    // toString for printing
+    @Override
+    public String toString() {
+        return name + " (Capacity: " + capacity + ")";
     }
 }
