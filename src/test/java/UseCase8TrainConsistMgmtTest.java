@@ -12,10 +12,9 @@ public class UseCase8TrainConsistMgmtTest {
 
         List<Bogie> bogies = new ArrayList<>();
 
-        bogies.add(new Bogie("Sleeper", 72));
-        bogies.add(new Bogie("AC Chair", 60));
-        bogies.add(new Bogie("First Class", 40));
-
+        bogies.add(new Bogie("Sleeper", 72, "Passenger"));
+        bogies.add(new Bogie("AC Chair", 60, "Passenger"));
+        bogies.add(new Bogie("First Class", 40, "Luxury"));
         List<Bogie> result = bogies.stream()
                 .filter(b -> b.getCapacity() > 60)
                 .collect(Collectors.toList());
