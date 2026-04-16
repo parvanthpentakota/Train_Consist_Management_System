@@ -10,6 +10,14 @@ public class Bogie {
         this.type = type;
     }
 
+
+    // Constructor
+    public Bogie(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
+    }
+
+    // Getters
     public String getName() {
         return name;
     }
@@ -25,5 +33,9 @@ public class Bogie {
     @Override
     public String toString() {
         return name + " (" + capacity + ")";
+    // toString for printing
+    @Override
+    public String toString() {
+        return name + " (Capacity: " + capacity + ")";
     }
 }
