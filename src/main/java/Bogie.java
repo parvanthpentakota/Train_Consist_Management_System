@@ -3,35 +3,33 @@ public class Bogie {
     private String name;
     private int capacity;
     private String type;
+    private String cargo; // NEW
 
-    // Constructor 1 (OLD)
-    public Bogie(String name, int capacity) {
-        this.name = name;
-        this.capacity = capacity;
-        this.type = "General";
-    }
-
-    // Constructor 2 (NEW)
-    public Bogie(String name, int capacity, String type) {
+    // Constructor (full)
+    public Bogie(String name, int capacity, String type, String cargo) {
         this.name = name;
         this.capacity = capacity;
         this.type = type;
+        this.cargo = cargo;
     }
 
-    public String getName() {
-        return name;
+    // Overloaded constructor
+    public Bogie(String name, int capacity, String type) {
+        this(name, capacity, type, "General");
     }
 
-    public int getCapacity() {
-        return capacity;
+    // Old constructor
+    public Bogie(String name, int capacity) {
+        this(name, capacity, "General", "General");
     }
 
-    public String getType() {
-        return type;
-    }
+    public String getName() { return name; }
+    public int getCapacity() { return capacity; }
+    public String getType() { return type; }
+    public String getCargo() { return cargo; }
 
     @Override
     public String toString() {
-        return name + " (" + capacity + ")";
+        return name + " (" + type + ", Cargo: " + cargo + ")";
     }
 }
