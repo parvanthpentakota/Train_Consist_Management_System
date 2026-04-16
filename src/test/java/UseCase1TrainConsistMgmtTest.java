@@ -12,3 +12,4 @@ public class UseCase1TrainConsistMgmtTest {
         assertEquals(0, list.size());
     }
 }
+

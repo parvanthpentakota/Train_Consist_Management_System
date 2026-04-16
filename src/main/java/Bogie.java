@@ -2,14 +2,14 @@ public class Bogie {
 
     private String name;
     private int capacity;
+    private String type;
 
-    // Constructor
-    public Bogie(String name, int capacity) {
+    public Bogie(String name, int capacity, String type) {
         this.name = name;
         this.capacity = capacity;
+        this.type = type;
     }
 
-    // Getters
     public String getName() {
         return name;
     }
@@ -18,9 +18,12 @@ public class Bogie {
         return capacity;
     }
 
-    // toString for printing
+    public String getType() {
+        return type;
+    }
+
     @Override
     public String toString() {
-        return name + " (Capacity: " + capacity + ")";
+        return name + " (" + capacity + ")";
     }
 }
