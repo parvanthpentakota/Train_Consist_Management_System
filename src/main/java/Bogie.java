@@ -4,6 +4,14 @@ public class Bogie {
     private int capacity;
     private String type;
 
+    // Constructor 1 (OLD)
+    public Bogie(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
+        this.type = "General";
+    }
+
+    // Constructor 2 (NEW)
     public Bogie(String name, int capacity, String type) {
         this.name = name;
         this.capacity = capacity;

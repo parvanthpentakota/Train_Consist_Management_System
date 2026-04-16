@@ -11,7 +11,6 @@ public class UseCase8TrainConsistMgmtTest {
     public void testFilterBogies() {
 
         List<Bogie> bogies = new ArrayList<>();
-
         bogies.add(new Bogie("Sleeper", 72, "Passenger"));
         bogies.add(new Bogie("AC Chair", 60, "Passenger"));
         bogies.add(new Bogie("First Class", 40, "Luxury"));
